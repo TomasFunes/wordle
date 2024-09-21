@@ -1,0 +1,144 @@
+body {
+    background-color: #1a1c1b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+main {
+    max-width: 820px;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.help-btn,
+.language {
+    width: 20%;
+    background-color: inherit;
+    color: inherit;
+    font-size: 2rem;
+    border: none;
+}
+
+.help-btn:hover,
+.language:hover {
+    cursor: pointer;
+    background-color: #222222;
+}
+
+.guesses {
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.guess {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.letter {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    margin: .2rem;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.letter:hover {
+    cursor: pointer;
+}
+
+.keyboard {
+ 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+}
+
+
+.key {
+    margin: .1rem;
+    flex: 1;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.key:hover {
+    background-color: hsl(140, 3%, 21%);
+    cursor: pointer;
+}
+
+.key:active {
+    background-color: #1a1c1b;
+    cursor: pointer;
+}
+
+.active-letter {
+    border: 2px solid orange;
+}
+
+.instructions {
+    position: absolute;
+    width: 80%;
+    top: 0px;
+    left: 10%;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.instructions * {
+    padding: .5rem 1rem;
+}
+
+.instructions li {
+    list-style-type: none;
+}
+
+.instructions button {
+    float: right;
+    top: 0px;
+    right: 0px;
+    background-color: inherit;
+    color: inherit; 
+    border: none;
+    font-size: 1.5rem;   
+    border-radius: 0 20px;
+}
+
+.instructions button:hover {
+    cursor: pointer;
+    background-color: hsl(140, 3%, 21%); 
+}
